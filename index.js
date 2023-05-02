@@ -66,9 +66,7 @@ function buscarPorPropriedades(carros, propriedades) {
   const carrosFiltrados = carros.map((carro) => {
     const carroFiltrado = {};
     propriedades.forEach((propriedade) => {
-      if (carro[propriedade]) {
-        carroFiltrado[propriedade] = carro[propriedade];
-      }
+      carroFiltrado[propriedade] = carro[propriedade];
     });
     return carroFiltrado;
   });
